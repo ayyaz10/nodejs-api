@@ -32,6 +32,10 @@ function addDataToExcel(userData) {
 
 }
 
+app.get('/', function (req, res) {
+  res.send('successs');
+})
+
 app.post('/emaildata', function (req, res) {
   try {
     const userData = req.body.jsonFormData;
